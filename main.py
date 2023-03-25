@@ -5,8 +5,10 @@ from keras.preprocessing import image
 import cv2
 import numpy as np
 
-face_classifier = cv2.CascadeClassifier(r'C:\Users\Admin\Desktop\PythonProject\EmotionDetectionCNN\haarcascade_frontalface_default.xml')
-classifier =load_model(r'C:\Users\Admin\Desktop\PythonProject\EmotionDetectionCNN\model.h5')
+
+
+face_classifier = cv2.CascadeClassifier(r'C:\Users\91703\Documents\siddhant\emotion_detector\haarcascade_frontalface_default.xml')
+classifier =load_model(r'C:\Users\91703\Documents\siddhant\emotion_detector\model.h5')
 
 emotion_labels = ['Angry','Disgust','Fear','Happy','Neutral', 'Sad', 'Surprise']
 
